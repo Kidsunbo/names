@@ -7,6 +7,11 @@ include(CTest)
 
 add_compile_options(-Wall -Wextra -Werror)
 
+if(ENABLE_TEST)
+    add_compile_options(--coverage -g)
+    add_link_options(--coverage)
+endif()
+
 find_package(CLI11 REQUIRED)
 
 execute_process(COMMAND python3 script/gen_vector.py WORKING_DIRECTORY ${CMAKE_SOURCE_DIR})
