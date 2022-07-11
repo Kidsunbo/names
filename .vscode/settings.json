@@ -1,0 +1,10 @@
+{
+    "cmake.configureSettings": {
+        "CMAKE_TOOLCHAIN_FILE":"build/conan/conan_toolchain.cmake"
+    },
+    "files.associations": {
+        "ostream": "cpp",
+        "iostream": "cpp",
+        "hash_set": "cpp"
+    }
+}
